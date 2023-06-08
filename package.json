@@ -1,0 +1,30 @@
+{
+  "name": "social-network-api",
+  "version": "1.0.0",
+  "description": "Week-17 Challenge (NoSQL)",
+  "main": "index.js",
+  "scripts": {
+    "start": "node index",
+    "dev": "nodemon index",
+    "seed": "node utils/seed",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/rmessett15/Social-Network-API.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/rmessett15/Social-Network-API/issues"
+  },
+  "homepage": "https://github.com/rmessett15/Social-Network-API#readme",
+  "dependencies": {
+    "express": "^4.18.2",
+    "mongoose": "^7.2.2"
+  },
+  "devDependencies": {
+    "nodemon": "^2.0.22"
+  }
+}
