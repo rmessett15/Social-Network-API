@@ -20,10 +20,9 @@ db.once("open", () => {
 // ????
 
 // Todo list:
-// Need to add friend and delete friend within userControllers, and fix deleting a reaction in thoughtControllers
-// Noticing that when i delete a user their thoughts and reactions aren't deleted
+// Need to add friend and delete friend within userControllers, and fix deleting a reaction in thoughtControllers...
+// Noticing that when I delete a user their thoughts and reactions aren't deleted...
 // Should I have returns on all my res.status calls???
-// Organize the order of routes in controllers to be the same as the order they appear in routes files
+// Organize the order of routes in controllers to be the same as the order they appear in routes files...
 // Utils folder???
-// Readme
-// Use elizabeth as a reference
+// Readme...
