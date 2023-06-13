@@ -1,3 +1,5 @@
+// ????????????????
+
 const { User, Thought, Reaction } = require("../models");
 const mongoose = require("mongoose");
 
@@ -8,7 +10,7 @@ const users = [
     username: "Ryan",
     email: "ryan@gmail.com",
     thought: [],
-    
+
   },
 ];
 
