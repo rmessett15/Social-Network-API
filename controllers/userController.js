@@ -13,7 +13,10 @@ const userController = {
 
   async getUser(req, res) {
     try {
-      const user = await User.findOne({ _id: req.params.userId });
+      const user = await User.findOne({ _id: req.params.userId })
+
+        .populate({ path: "thoughts", select: "-__v" })
+        .populate({ path: "friends", select: "-__v" });
 
       if (!user) {
         return res.status(404).json({ message: "No user with that ID" });
@@ -57,18 +60,16 @@ const userController = {
 
   async deleteUser(req, res) {
     try {
-      const user = await User.findOneAndDelete({ _id: req.params.userId }); //{ $pull: {thought: {_id: req.params.userId}} }
+      const user = await User.findOneAndDelete({ _id: req.params.userId });
 
       if (!user) {
         return res.status(404).json({ message: "No user with that ID" });
       }
 
       await Thought.deleteMany({ _id: { $in: user.thoughts } });
-      return res
-        .status(200)
-        .json({
-          message: "User and associated thoughts and reactions deleted!",
-        });
+      return res.status(200).json({
+        message: "User and associated thoughts and reactions deleted!",
+      });
     } catch (err) {
       console.log(err);
       return res.status(500).json(err);
@@ -79,7 +80,6 @@ const userController = {
     try {
       const friend = await User.findOneAndUpdate(
         { _id: req.params.userId },
-        // add to set or pull???
         { $addToSet: { friends: req.params.friendId } },
         { runValidators: true, new: true }
       );

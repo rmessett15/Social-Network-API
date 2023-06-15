@@ -30,13 +30,13 @@ const thoughtController = {
     try {
       const thought = await Thought.create(req.body);
 
-      // const user = await User.findByIdAndUpdate(
-      //   req.body.userId,
-      //   { $addToSet: { thoughts: thought._id } },
-      //   { runValidators: true, new: true }
-      // );
+      const user = await User.findByIdAndUpdate(
+        req.body.userId,
+        { $addToSet: { thoughts: thought._id } },
+        { runValidators: true, new: true }
+      );
 
-      return res.status(200).json({ thought });
+      return res.status(200).json({ thought, user });
     } catch (err) {
       console.log(err);
       return res.status(500).json(err);
@@ -72,11 +72,9 @@ const thoughtController = {
         return res.status(404).json({ message: "No thought with that ID" });
       }
 
-      return res
-        .status(200)
-        .json({
-          message: "Thought & associated reactions successfully deleted",
-        });
+      return res.status(200).json({
+        message: "Thought & associated reactions successfully deleted",
+      });
     } catch (err) {
       console.log(err);
       return res.status(500).json(err);
