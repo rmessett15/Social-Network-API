@@ -38,7 +38,7 @@ This application was created as the start of a full stack social network applica
 
 ## Live Screen Recording of Application Functionality
 
-https://drive.google.com/file/d/1v2Jqe8OJcDUH6s6oE1ou3rFOizZp_Ad-/view
+https://drive.google.com/file/d/1pioIILUrqjeEg_HnsBBjwchSox0L-EU7/view
 
 ## Screenshots
 
