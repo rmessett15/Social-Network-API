@@ -34,9 +34,15 @@ Week-18 Challenge (MongoDB)
 
 ## Description
 
+This application was created as the start of a full stack social network application using a MongoDB database, Express.js routing, and the Mongoose ODM. It sets up the initial CRUD API routes for said application which allow users to share their thoughts, react to friends' thoughts, create a friend list, and subsequently delete thoughts, reactions, friends, and themselves as a user. 
+
 ## Live Screen Recording of Application Functionality
 
+https://drive.google.com/file/d/1v2Jqe8OJcDUH6s6oE1ou3rFOizZp_Ad-/view
+
 ## Screenshots
+
+
 
 ## Technologies Used
 
@@ -71,27 +77,27 @@ This application is powered by Node.js (v16.19.1), Express.js (v.14.18.2), JavaS
    - Command for nodemon will be npm i nodemon
    - Command for jest will be npm i jest
 
-6. Next, you will need to make sure you have an added .env file within the root directory of your repository, within which you will pass your environmental variables specifying the database name, your MySQL username, and your MySQL password. This will need to be completed before running the application, and will allow the connection.js file to utilize your environmental variables keeping your sensitive information protected.
+6. Next, you will want to make sure you have access to a MongoDB account and MongoDB Compass, these will allow you to interact with the database and visually confirm what changes are being made in the database. (Link for MongoDB & MongoDB Compass download -> https://coding-boot-camp.github.io/full-stack/mongodb/how-to-install-mongodb).
 
-7. If you do not have a MySQL account, you will need to create one (see https://dev.mysql.com/doc/mysql-installation-excerpt/5.7/en/).
+7. Once all dependencies are installed, you will then be able to run the command npm start from the root directory to spin up the server. With nodemon installed, you will also be able to utilize the command npm run dev to keep the server spun up between code edits.
 
-8. Once all dependencies are installed, you will need to create the database. To do this you will need to navigate to the directory db directory containing the schema.sql file. Once there, you will need to open up a MySQL shell using the command mysql -u root -p, where you will then be prompted to enter you password. Once your password is entered you will be in the MySQL shell.
-
-9. Once in the MySQL shell you will then run the command source schema.sql. This will create the database.
-
-10. Once the database has been created, you will then need to seed the database (this will also create the model structure for the tables within the database). To do this, navigate to the root directory and run the command npm run seed. This needs to be done from the root directory because the .env file lives within the root.
-
-11. Once the database has been seeded, you will then be able to run the command npm start from the root directory to spin up the server. With nodemon installed, you will also be able to utilize the command npm run watch to keep the server spun up between code edits.
-
-12. From there, you can utilize applications such as Insomnia to test the functionality of the routes within the program and make edits to both the front-end and back-end of the code base.
+8. From there, you can utilize applications such as Insomnia to test the functionality of the API routes within the program and make edits to the code base (Link to install Insomnia -> https://docs.insomnia.rest/insomnia/install).
 
 ## Credits
 
+
+
 ## Features
+
+
 
 ## Usage Information
 
+
+
 ## Suggested Future Development
+
+
 
 ## Contribution Guidelines
 
