@@ -48,7 +48,7 @@ https://drive.google.com/file/d/1pioIILUrqjeEg_HnsBBjwchSox0L-EU7/view
 
 ## Technologies Used
 
-This application is powered by Node.js (v16.19.1), Express.js (v.14.18.2), JavaScript, MongoDB, and Mongoose (ODM). It utilizes the node package manager (npm) dependencies express (v4.18.2), and mongoose (v7.2.2). Nodemon (v2.0.22) was utilized as a devDependency allowing the server to refresh when edits were made to application. Jest (v.29.5.0) is installed as a devDependency for future unit testing. Also, the Insomnia application was utilized to test the functionality of routes within the program.
+This application is powered by Node.js (v16.19.1), Express.js (v.14.18.2), JavaScript, MongoDB, and Mongoose (ODM). It utilizes the node package manager (npm) dependencies express (v4.18.2), and mongoose (v7.2.2). Nodemon (v2.0.22) was utilized as a devDependency allowing the server to refresh when edits were made to application. Jest (v.29.5.0) is installed as a devDependency for future unit testing. MongoDB Compass acted as the interactive shell used to visually see the database. Also, the Insomnia application, was utilized to test the functionality of routes within the program.
 
 ![NodeJS](https://img.shields.io/badge/node.js-6DA55F?style=for-the-badge&logo=node.js&logoColor=white)
 ![Express.js](https://img.shields.io/badge/express.js-%23404d59.svg?style=for-the-badge&logo=express&logoColor=%2361DAFB)
@@ -87,19 +87,22 @@ This application is powered by Node.js (v16.19.1), Express.js (v.14.18.2), JavaS
 
 ## Credits
 
-
+The general structuring of routes and file organization followed much of the week-18 mini challenge. I worked with a tutor, Mila Hose who also helped me establish the general formatting of my controller files and my route files. Also Elizabeth Olsavsky, another student in the cohort helped me debug my createThought route, allowing me to add each thought to the thought array associated with each user.
 
 ## Features
 
-
+Features of this application include the ability to create users/thoughts, find all users/thoughts, find a single user/single thought, update user/thought information, and delete a user/thought. The ability to add reactions to particular thoughts, and friends to users is also a notable feature -> when a thought, reaction, or friend is added to the database, it will update within the user object accordingly.
 
 ## Usage Information
 
-
+As of now the usage of this application can be conducted through spinning up the server with npm run start or nodemon with npm run dev, then heading over to an application like Insomnia or Postman and testing different API end points. For further information on starting up the server, MongoDB Compass and MongoDB installation navigate to the Installation section above.
 
 ## Suggested Future Development
 
-
+- Add additional seed data with the node package manager faker-js
+- Continue development of additional routes adding likes or up-votes
+- Create a front-end UI that will enable users to interact with the application in a cohesive and intuitive way
+- Include unit testing with Jest
 
 ## Contribution Guidelines
 
