@@ -42,7 +42,9 @@ https://drive.google.com/file/d/1pioIILUrqjeEg_HnsBBjwchSox0L-EU7/view
 
 ## Screenshots
 
+![Screenshot1-week-18-challenge](https://github.com/rmessett15/Social-Network-API/assets/120127903/7336192b-6af2-4a8f-8a87-06212c8d46ad)
 
+![Screenshot2-week-18-challenge](https://github.com/rmessett15/Social-Network-API/assets/120127903/93900a36-ecb1-4d4e-8d65-4549416d5493)
 
 ## Technologies Used
 
